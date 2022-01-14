@@ -124,7 +124,9 @@ def openNewWindow2():
     window.mainloop()
 
     
-
+op=0
+v1=0
+opFlag=False
 
  
 
@@ -139,10 +141,11 @@ def openNewWindow():
     #             text="Close",
     #             command = lambda:newWindowClose(newWindow))
     #btn.pack(pady = 5)
+        
 
-
-    op=0
-    v1=0
+    global op
+    global v1
+    global opFlag
     opFlag=False
 
     def chageText(num):
@@ -243,6 +246,8 @@ def openNewWindow():
                 command=lambda:opset(1))
     btnAdd.grid(row=4, column=3 ,sticky=NSEW)
     window.mainloop()
+
+    
 
         
    
